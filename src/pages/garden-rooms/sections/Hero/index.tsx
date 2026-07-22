@@ -60,7 +60,7 @@ export const GardenRoomsHero = ({ location }: GardenRoomsHeroProps) => {
           >
             <img
               src={image}
-              alt={`Garden room installation project ${index + 1}${altSuffix} - Professional garden room by Glenhaus Garden Rooms`}
+              alt={`Garden room installation project ${index + 1}${altSuffix} - Professional garden room by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-full object-cover"
             />

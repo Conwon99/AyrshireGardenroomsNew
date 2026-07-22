@@ -8,12 +8,12 @@ export const GardenRoomsTestimonials = ({ location }: GardenRoomsTestimonialsPro
   const reviews = [
     {
       author: "Sarah Mitchell",
-      text: "Absolutely delighted with our new garden room! Glenhaus Garden Rooms transformed our garden into a beautiful space. The quality is outstanding and the team were professional throughout. Highly recommend!",
+      text: "Absolutely delighted with our new garden room! Ayrshire Garden Rooms transformed our garden into a beautiful space. The quality is outstanding and the team were professional throughout. Highly recommend!",
       rating: 5
     },
     {
       author: "James Thompson",
-      text: "We needed a garden office and Glenhaus Garden Rooms delivered exactly what we wanted. The installation was quick, clean, and the finished result is perfect. Great value for money too!",
+      text: "We needed a garden office and Ayrshire Garden Rooms delivered exactly what we wanted. The installation was quick, clean, and the finished result is perfect. Great value for money too!",
       rating: 5
     },
     {
@@ -25,30 +25,6 @@ export const GardenRoomsTestimonials = ({ location }: GardenRoomsTestimonialsPro
 
   return (
     <>
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "Review",
-          "itemReviewed": {
-            "@type": "LocalBusiness",
-            "name": "Glenhaus Garden Rooms"
-          },
-          "review": reviews.map((review) => ({
-            "@type": "Review",
-            "author": {
-              "@type": "Person",
-              "name": review.author
-            },
-            "reviewRating": {
-              "@type": "Rating",
-              "ratingValue": review.rating,
-              "bestRating": "5"
-            },
-            "reviewBody": review.text
-          }))
-        }) }}
-      />
       <section id="testimonials" className="box-border caret-transparent py-[70px] md:py-[140px]">
       <div className="box-border caret-transparent max-w-[1540px] mx-auto px-[15px] md:px-[30px] before:accent-auto before:caret-transparent before:text-neutral-600 before:table before:text-lg before:not-italic before:normal-nums before:font-medium before:col-end-2 before:col-start-1 before:row-end-2 before:row-start-1 before:tracking-[normal] before:leading-[27px] before:list-outside before:list-disc before:pointer-events-auto before:text-start before:indent-[0px] before:normal-case before:visible before:border-separate before:font-manrope after:accent-auto after:caret-transparent after:clear-both after:text-neutral-600 after:table after:text-lg after:not-italic after:normal-nums after:font-medium after:col-end-2 after:col-start-1 after:row-end-2 after:row-start-1 after:tracking-[normal] after:leading-[27px] after:list-outside after:list-disc after:pointer-events-auto after:text-start after:indent-[0px] after:normal-case after:visible after:border-separate after:font-manrope">
         <div className="box-border caret-transparent text-center mb-[30px] md:mb-[50px]">

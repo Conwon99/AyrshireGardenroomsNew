@@ -21,7 +21,7 @@ interface Props {
 const { title, description, canonical, keywords, ogImage, gaId = "G-T9RTPLDCJ7", breadcrumbs, locationSchema } = Astro.props;
 
 const allLocationNames = getAllLocations().map((loc) => ({ "@type": "City" as const, "name": loc.name }));
-const defaultBreadcrumbs: BreadcrumbItem[] = [{ name: "Home", url: "https://glenhausgardenroom.com/" }];
+const defaultBreadcrumbs: BreadcrumbItem[] = [{ name: "Home", url: "https://ayrshiregardenrooms.co.uk/" }];
 const breadcrumbItems = breadcrumbs && breadcrumbs.length > 0 ? breadcrumbs : defaultBreadcrumbs;
 const breadcrumbSchema = {
   "@context": "https://schema.org",
@@ -30,22 +30,22 @@ const breadcrumbSchema = {
     "@type": "ListItem",
     "position": i + 1,
     "name": item.name,
-    "item": item.url.startsWith("http") ? item.url : `https://glenhausgardenroom.com${item.url}`,
+    "item": item.url.startsWith("http") ? item.url : `https://ayrshiregardenrooms.co.uk${item.url}`,
   })),
 };
 
 // Canonical phone number for SEO and structured data
-const CANONICAL_PHONE = "07375 872331";
-const CANONICAL_PHONE_TEL = "+447375872331";
+const CANONICAL_PHONE = "[ADD PHONE NUMBER]";
+const CANONICAL_PHONE_TEL = "";
 
 // Default meta description (optimized to 120-160 characters)
-const defaultDescription = "Professional garden room and decking installation across Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Free quotes, fully insured, 13+ years experience.";
+const defaultDescription = "Professional garden room and decking installation across Ayrshire and Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Free quotes, fully insured.";
 
 // Default keywords
 const defaultKeywords = "garden rooms scotland, decking scotland, garden room installation, deck installation, custom garden rooms, composite decking, garden office scotland, deck builders scotland, garden room builders, outdoor decking";
 
 // Generate canonical URL
-const siteUrl = "https://glenhausgardenroom.com";
+const siteUrl = "https://ayrshiregardenrooms.co.uk";
 const canonicalUrl = canonical || new URL(Astro.url.pathname, siteUrl).toString();
 const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
 ---
@@ -58,7 +58,7 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <title>{title}</title>
     <meta name="description" content={description || defaultDescription} />
     <meta name="keywords" content={keywords || defaultKeywords} />
-    <meta name="author" content="Glenhaus Garden Rooms" />
+    <meta name="author" content="Ayrshire Garden Rooms" />
     <meta name="language" content="en-GB" />
     <meta name="geo.region" content="GB-SCT" />
     <meta name="geo.placename" content="Scotland" />
@@ -90,8 +90,8 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <meta property="og:image" content={defaultOgImage} />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Glenhaus Garden Rooms - Professional garden room and decking installation across Scotland" />
-    <meta property="og:site_name" content="Glenhaus Garden Rooms" />
+    <meta property="og:image:alt" content="Ayrshire Garden Rooms - Professional garden room and decking installation across Scotland" />
+    <meta property="og:site_name" content="Ayrshire Garden Rooms" />
     <meta property="og:locale" content="en_GB" />
     
     <!-- Twitter -->
@@ -99,7 +99,7 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description || defaultDescription} />
     <meta name="twitter:image" content={defaultOgImage} />
-    <meta name="twitter:image:alt" content="Glenhaus Garden Rooms - Professional garden room and decking installation across Scotland" />
+    <meta name="twitter:image:alt" content="Ayrshire Garden Rooms - Professional garden room and decking installation across Scotland" />
     
     <link rel="icon" type="image/jpeg" href="/favicon.jpg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.jpg" />
@@ -123,15 +123,14 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": ["HomeAndConstructionBusiness", "ProfessionalService", "LocalBusiness"],
-      "name": "Glenhaus Garden Rooms",
-      "alternateName": ["GlenHaus Garden Rooms", "GlenHaus"],
-      "description": "Professional garden room and deck installation specialists across Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Fully qualified, insured, with over 13 years' experience.",
+      "name": "Ayrshire Garden Rooms",
+      "description": "Professional garden room and deck installation specialists across Ayrshire and Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Fully qualified and insured.",
       "telephone": CANONICAL_PHONE_TEL,
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "",
-        "addressLocality": "Ayrshire",
-        "addressRegion": "Scotland Central Belt",
+        "addressLocality": "Irvine",
+        "addressRegion": "Ayrshire",
         "postalCode": "",
         "addressCountry": "GB"
       },
@@ -277,28 +276,6 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
       },
       "url": Astro.url.origin,
       "priceRange": "$$",
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "24",
-        "bestRating": "5",
-        "worstRating": "1"
-      },
-      "review": [
-        {
-          "@type": "Review",
-          "author": {
-            "@type": "Person",
-            "name": "Nicole Saunders"
-          },
-          "reviewRating": {
-            "@type": "Rating",
-            "ratingValue": "5",
-            "bestRating": "5"
-          },
-          "reviewBody": "Brilliant service and an amazing job completed. Would highly recommend!"
-        }
-      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
         "dayOfWeek": [
@@ -312,7 +289,6 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
         "opens": "08:00",
         "closes": "17:00"
       },
-      "foundingDate": "2011",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "value": "5-10"
@@ -322,21 +298,19 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Glenhaus Garden Rooms",
-      "alternateName": ["GlenHaus Garden Rooms", "GlenHaus"],
+      "name": "Ayrshire Garden Rooms",
       "url": siteUrl,
       "logo": `${siteUrl}/logo.png`,
-      "description": "Professional garden room and decking installation specialists across Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Fully qualified, insured, with over 13 years' experience.",
+      "description": "Professional garden room and decking installation specialists across Ayrshire and Scotland. Custom garden rooms, garden offices, and beautiful decking solutions. Fully qualified and insured.",
       "telephone": CANONICAL_PHONE_TEL,
       "address": {
         "@type": "PostalAddress",
-        "addressLocality": "Ayrshire",
-        "addressRegion": "Scotland Central Belt",
+        "addressLocality": "Irvine",
+        "addressRegion": "Ayrshire",
         "addressCountry": "GB"
       },
       "areaServed": allLocationNames,
       "sameAs": [],
-      "foundingDate": "2011",
       "numberOfEmployees": {
         "@type": "QuantitativeValue",
         "value": "5-10"
@@ -347,13 +321,12 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <script type="application/ld+json" set:html={JSON.stringify({
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Glenhaus Garden Rooms",
-      "alternateName": ["GlenHaus Garden Rooms", "GlenHaus"],
+      "name": "Ayrshire Garden Rooms",
       "url": siteUrl,
-      "description": "Professional garden room and decking installation across Scotland",
+      "description": "Professional garden room and decking installation across Ayrshire and Scotland",
       "publisher": {
         "@type": "Organization",
-        "name": "Glenhaus Garden Rooms"
+        "name": "Ayrshire Garden Rooms"
       },
       "potentialAction": {
         "@type": "SearchAction",

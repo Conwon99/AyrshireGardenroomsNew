@@ -132,7 +132,7 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
           <div className="box-border caret-transparent lg:sticky lg:top-8">
             <img
               src="/imgs/WhatsApp Image 2025-12-27 at 4.01.38 PM (2).jpeg"
-              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Scotland"} - Custom garden office by Glenhaus Garden Rooms`}
+              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Scotland"} - Custom garden office by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-auto rounded-lg shadow-xl object-cover"
             />

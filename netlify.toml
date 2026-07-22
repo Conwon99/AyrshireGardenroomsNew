@@ -9,33 +9,33 @@
 # Domain configuration
 # Note: You still need to add the domain in Netlify dashboard and configure DNS
 [[redirects]]
-  from = "https://www.glenhausgardenroom.com/*"
-  to = "https://glenhausgardenroom.com/:splat"
+  from = "https://www.ayrshiregardenrooms.co.uk/*"
+  to = "https://ayrshiregardenrooms.co.uk/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://www.glenhausgardenroom.com/*"
-  to = "https://glenhausgardenroom.com/:splat"
+  from = "http://www.ayrshiregardenrooms.co.uk/*"
+  to = "https://ayrshiregardenrooms.co.uk/:splat"
   status = 301
   force = true
 
 [[redirects]]
-  from = "http://glenhausgardenroom.com/*"
-  to = "https://glenhausgardenroom.com/:splat"
+  from = "http://ayrshiregardenrooms.co.uk/*"
+  to = "https://ayrshiregardenrooms.co.uk/:splat"
   status = 301
   force = true
 
 # Consolidate duplicate garden-rooms URLs (SEO: one canonical service page)
 [[redirects]]
-  from = "https://glenhausgardenroom.com/service/garden-rooms"
-  to = "https://glenhausgardenroom.com/garden-rooms"
+  from = "https://ayrshiregardenrooms.co.uk/service/garden-rooms"
+  to = "https://ayrshiregardenrooms.co.uk/garden-rooms"
   status = 301
   force = true
 
 [[redirects]]
-  from = "https://glenhausgardenroom.com/service/garden-rooms/"
-  to = "https://glenhausgardenroom.com/garden-rooms"
+  from = "https://ayrshiregardenrooms.co.uk/service/garden-rooms/"
+  to = "https://ayrshiregardenrooms.co.uk/garden-rooms"
   status = 301
   force = true
 

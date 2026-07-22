@@ -42,7 +42,7 @@ export const HomeHero = () => {
           >
             <img
               src={image}
-              alt={`Garden room and decking project ${index + 1} in Scotland - Professional services by Glenhaus Garden Rooms`}
+              alt={`Garden room and decking project ${index + 1} in Scotland - Professional services by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-full object-cover"
             />

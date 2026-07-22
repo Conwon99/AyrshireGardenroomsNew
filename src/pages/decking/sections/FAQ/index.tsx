@@ -132,7 +132,7 @@ export const DeckingFAQ = ({ location }: DeckingFAQProps) => {
           <div className="box-border caret-transparent lg:sticky lg:top-8">
             <img
               src="/imgs/decking/WhatsApp Image 2026-01-27 at 6.23.48 PM (2).jpeg"
-              alt={`Deck installation project${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Glenhaus Garden Rooms`}
+              alt={`Deck installation project${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-auto rounded-lg shadow-xl object-cover"
             />

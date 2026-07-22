@@ -54,10 +54,10 @@ export const GardenRoomsContactForm = () => {
           const hostname = window.location.hostname;
           const pathname = window.location.pathname;
           
-          // Check if it's a subdomain (e.g., ads.glenhausgardenroom.com)
-          const isSubdomain = hostname !== "glenhausgardenroom.com" && 
-                             hostname !== "www.glenhausgardenroom.com" &&
-                             hostname.includes("glenhausgardenroom.com");
+          // Check if it's a subdomain (e.g., ads.ayrshiregardenrooms.co.uk)
+          const isSubdomain = hostname !== "ayrshiregardenrooms.co.uk" && 
+                             hostname !== "www.ayrshiregardenrooms.co.uk" &&
+                             hostname.includes("ayrshiregardenrooms.co.uk");
           
           // Check if it's the garden-rooms page (subdomain landing page)
           const isGardenRoomsPage = pathname === "/garden-rooms" || pathname === "/garden-rooms.html";
@@ -69,13 +69,13 @@ export const GardenRoomsContactForm = () => {
             websiteUrl = window.location.origin + pathname;
           } else {
             // Main domain
-            websiteUrl = "https://glenhausgardenroom.com/";
+            websiteUrl = "https://ayrshiregardenrooms.co.uk/";
           }
           
           formData.append("websiteUrl", websiteUrl);
         } else {
           // Fallback for SSR
-          formData.append("websiteUrl", "https://glenhausgardenroom.com/");
+          formData.append("websiteUrl", "https://ayrshiregardenrooms.co.uk/");
         }
         
         // Determine service based on page

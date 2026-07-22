@@ -70,7 +70,7 @@ export const DeckingHero = ({ location }: DeckingHeroProps) => {
           >
             <img
               src={image}
-              alt={`Deck installation project ${index + 1}${altSuffix} - Professional decking by Glenhaus Garden Rooms`}
+              alt={`Deck installation project ${index + 1}${altSuffix} - Professional decking by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-full object-cover"
             />

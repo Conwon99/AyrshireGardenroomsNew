@@ -60,7 +60,7 @@ export const DeckingGallery = ({ location }: DeckingGalleryProps) => {
               <div className="box-border caret-transparent aspect-[4/3] overflow-hidden">
                 <img
                   src={image}
-                  alt={`Deck installation project ${index + 1}${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Glenhaus Garden Rooms`}
+                  alt={`Deck installation project ${index + 1}${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Ayrshire Garden Rooms`}
                   loading="lazy"
                   className="w-full h-full object-cover box-border caret-transparent group-hover:scale-110 transition-transform duration-300"
                 />
@@ -104,7 +104,7 @@ export const DeckingGallery = ({ location }: DeckingGalleryProps) => {
             </button>
             <img
               src={selectedImage}
-              alt={`Deck installation project${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Glenhaus Garden Rooms`}
+              alt={`Deck installation project${location ? ` in ${location.name}` : " in Scotland"} - Professional decking by Ayrshire Garden Rooms`}
               className="max-w-full max-h-[90vh] object-contain box-border caret-transparent rounded-lg"
             />
           </div>

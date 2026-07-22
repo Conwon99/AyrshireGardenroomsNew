@@ -10,8 +10,9 @@ import { GardenRoomsTestimonials } from "@/pages/garden-rooms/sections/Testimoni
 import { GardenRoomsContactForm } from "@/pages/garden-rooms/sections/ContactForm";
 import { getAllLocations } from "@/data/locations";
 import type { Location } from "@/data/locations";
+import { CANONICAL_PHONE_TEL } from "@/utils/phoneTracking";
 
-const siteUrl = "https://glenhausgardenroom.com";
+const siteUrl = "https://ayrshiregardenrooms.co.uk";
 
 export function getStaticPaths() {
   return getAllLocations().map((location) => ({
@@ -22,7 +23,7 @@ export function getStaticPaths() {
 
 const { location } = Astro.props as { location: Location };
 
-const title = `Garden Rooms & Decking ${location.name} | ${location.regionLabel} | Glenhaus Garden Rooms`;
+const title = `Garden Rooms & Decking ${location.name} | ${location.regionLabel} | Ayrshire Garden Rooms`;
 const description = `Professional garden room and decking installation in ${location.name}. ${location.neighborhoods.slice(0, 3).join(", ")} and surrounding areas. Free quotes, fully insured.`;
 const canonical = `${siteUrl}/${location.slug}`;
 const keywords = `garden rooms ${location.name}, decking ${location.name}, garden room installation ${location.regionLabel}, deck installation ${location.name}`;
@@ -36,10 +37,10 @@ const breadcrumbs = [
 const locationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
-  "name": `Glenhaus Garden Rooms - ${location.name}`,
+  "name": `Ayrshire Garden Rooms - ${location.name}`,
   "description": `Professional garden room and decking installation in ${location.name} and ${location.regionLabel}.`,
   "url": canonical,
-  "telephone": "+447375872331",
+  "telephone": CANONICAL_PHONE_TEL,
   "address": {
     "@type": "PostalAddress",
     "addressLocality": location.name,
@@ -54,13 +55,6 @@ const locationSchema = {
     },
   }),
   "areaServed": { "@type": "City", "name": location.name },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "5.0",
-    "reviewCount": "24",
-    "bestRating": "5",
-    "worstRating": "1",
-  },
   "priceRange": "$$",
 };
 ---

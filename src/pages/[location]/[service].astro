@@ -16,7 +16,7 @@ import { GardenRoomsFAQ } from "@/pages/garden-rooms/sections/FAQ";
 import { GardenRoomsContactForm } from "@/pages/garden-rooms/sections/ContactForm";
 import { getAllLocations, LOCATION_SERVICES, SERVICE_NAMES, type Location, type LocationServiceSlug } from "@/data/locations";
 
-const siteUrl = "https://glenhausgardenroom.com";
+const siteUrl = "https://ayrshiregardenrooms.co.uk";
 
 export function getStaticPaths() {
   const paths: { params: { location: string; service: string }; props: { location: Location; service: LocationServiceSlug } }[] = [];
@@ -35,7 +35,7 @@ const { location, service } = Astro.props;
 const serviceName = SERVICE_NAMES[service];
 const serviceTitle = `${serviceName} ${location.name}`;
 
-const title = `${serviceName} ${location.name} | Who's the Best ${serviceName} Near Me? | Glenhaus Garden Rooms`;
+const title = `${serviceName} ${location.name} | Who's the Best ${serviceName} Near Me? | Ayrshire Garden Rooms`;
 const description = `Looking for the best ${serviceName.toLowerCase()} in ${location.name}? Professional ${serviceName.toLowerCase()} installation across ${location.regionLabel}. Free quotes, fully insured. Serving ${location.neighborhoods.slice(0, 2).join(", ")} and more.`;
 const canonical = `${siteUrl}/${location.slug}/${service}`;
 const keywords = `${serviceName.toLowerCase()} ${location.name}, ${serviceName.toLowerCase()} near me, ${location.name} ${serviceName.toLowerCase()}, ${location.regionLabel}`;

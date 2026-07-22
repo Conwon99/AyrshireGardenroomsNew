@@ -12,7 +12,7 @@ export const DeckingTestimonials = () => {
         <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:gap-y-[30px] lg:grid-cols-[1fr_1fr_1fr]">
           <ReviewCard
             author="David Campbell"
-            text="Our new deck has transformed our garden! Glenhaus Garden Rooms did an amazing job - the quality is excellent and the installation was quick and professional. Highly recommend their decking services!"
+            text="Our new deck has transformed our garden! Ayrshire Garden Rooms did an amazing job - the quality is excellent and the installation was quick and professional. Highly recommend their decking services!"
             isRecommendation={true}
           />
           <ReviewCard
@@ -22,7 +22,7 @@ export const DeckingTestimonials = () => {
           />
           <ReviewCard
             author="Robert MacLeod"
-            text="Professional service from start to finish. Our multi-level deck is exactly what we wanted, and the attention to detail is outstanding. Would definitely use Glenhaus Garden Rooms again!"
+            text="Professional service from start to finish. Our multi-level deck is exactly what we wanted, and the attention to detail is outstanding. Would definitely use Ayrshire Garden Rooms again!"
             isRecommendation={true}
           />
         </div>

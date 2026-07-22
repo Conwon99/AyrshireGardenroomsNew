@@ -96,7 +96,7 @@ export const GardenRoomsFeatures = ({ location }: GardenRoomsFeaturesProps) => {
               >
                 <img
                   src={image}
-                  alt={`Project ${index + 1} by Glenhaus Garden Rooms - Professional garden room installation${location ? ` in ${location.name}` : " in Scotland"}`}
+                  alt={`Project ${index + 1} by Ayrshire Garden Rooms - Professional garden room installation${location ? ` in ${location.name}` : " in Scotland"}`}
                   loading="lazy"
                   className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full"
                 />
@@ -121,12 +121,12 @@ export const GardenRoomsFeatures = ({ location }: GardenRoomsFeaturesProps) => {
           <div className="box-border caret-transparent gap-x-[30px] flex flex-col justify-between gap-y-[30px] md:gap-x-[50px] md:gap-y-[50px]">
             <div className="box-border caret-transparent">
               <h2 className="text-gray-900 text-3xl font-bold box-border caret-transparent leading-[38px] mb-2.5 sm:text-4xl sm:leading-[43.2px] md:text-[56px] md:leading-[67.2px]">
-                {location ? `Why choose GlenHaus for Garden Rooms in ${location.name}?` : "Why choose GlenHaus?"}
+                {location ? `Why choose Ayrshire Garden Rooms for Garden Rooms in ${location.name}?` : "Why choose Ayrshire Garden Rooms?"}
               </h2>
               <p className="text-gray-700 text-sm sm:text-base box-border caret-transparent mt-2.5 mb-5 md:mt-5 md:mb-5 leading-relaxed">
                 {location
-                  ? `Professional garden room installation in ${location.name} and across ${location.regionLabel || "Scotland"}. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect garden room. Over 13 years of experience.`
-                  : "Professional garden room and decking installation across Scotland. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect garden room or decking project. Over 13 years of experience."}
+                  ? `Professional garden room installation in ${location.name} and across ${location.regionLabel || "Scotland"}. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect garden room. Fully qualified and insured.`
+                  : "Professional garden room and decking installation across Scotland. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect garden room or decking project. Fully qualified and insured."}
               </p>
               <div className="box-border caret-transparent mb-5 md:mb-[50px]">
                 <ul className="text-gray-900 text-sm sm:text-base md:text-lg box-border caret-transparent list-none pl-0 space-y-2 md:space-y-3">

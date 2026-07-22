@@ -1,7 +1,7 @@
 import type { APIRoute } from 'astro';
 import { getAllLocations, LOCATION_SERVICES } from '@/data/locations';
 
-const siteUrl = 'https://glenhausgardenroom.com';
+const siteUrl = 'https://ayrshiregardenrooms.co.uk';
 const lastmod = new Date().toISOString().split('T')[0];
 
 // Static pages

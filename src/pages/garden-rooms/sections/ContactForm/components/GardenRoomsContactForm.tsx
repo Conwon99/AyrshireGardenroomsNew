@@ -91,7 +91,7 @@ export const GardenRoomsContactForm = () => {
         formData.append("service", service);
 
         try {
-          const response = await fetch("https://formspree.io/f/xjgvojeo", {
+          const response = await fetch("https://formspree.io/f/mykrdwek", {
             method: "POST",
             body: formData,
             headers: {
@@ -124,7 +124,7 @@ export const GardenRoomsContactForm = () => {
     <form
       name="wf-form-Contact-Form"
       aria-label="Contact Form"
-      action="https://formspree.io/f/xjgvojeo"
+      action="https://formspree.io/f/mykrdwek"
       method="POST"
       encType="multipart/form-data"
       className="box-border caret-transparent"

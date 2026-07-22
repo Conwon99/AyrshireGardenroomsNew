@@ -18,7 +18,7 @@ export const AboutHero = () => {
             </span> Ayrshire Garden Rooms
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 leading-relaxed max-w-3xl">
-            Professional garden room and decking installation specialists serving Ayrshire and across Scotland
+            Professional garden room installation specialists serving Ayrshire
           </p>
         </div>
       </div>

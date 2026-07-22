@@ -6,7 +6,6 @@ interface LocationCardProps {
 
 export const LocationCard = ({ location }: LocationCardProps) => {
   const locationHref = `/${location.slug}`;
-  const deckingHref = `/${location.slug}/decking`;
   const gardenRoomsHref = `/${location.slug}/garden-rooms`;
 
   return (
@@ -17,12 +16,6 @@ export const LocationCard = ({ location }: LocationCardProps) => {
         </a>
       </h3>
       <div className="flex flex-col gap-3">
-        <a
-          href={deckingHref}
-          className="min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-[10px] bg-[#787e59] text-white font-semibold text-sm md:text-base hover:bg-[#8a9168] transition-colors"
-        >
-          Decking services
-        </a>
         <a
           href={gardenRoomsHref}
           className="min-h-[44px] inline-flex items-center justify-center px-4 py-3 rounded-[10px] bg-[#787e59] text-white font-semibold text-sm md:text-base hover:bg-[#8a9168] transition-colors"

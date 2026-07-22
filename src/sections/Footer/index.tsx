@@ -8,7 +8,7 @@ interface FooterLocation {
 }
 
 interface FooterProps {
-  /** When provided (e.g. on /glasgow or /glasgow/decking), footer shows a map embed for that location */
+  /** When provided (e.g. on /glasgow or /glasgow/garden-rooms), footer shows a map embed for that location */
   location?: FooterLocation;
 }
 
@@ -24,7 +24,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
     ? `https://www.google.com/maps/search/?api=1&query=${footerLocation!.geo!.latitude},${footerLocation!.geo!.longitude}`
     : "https://www.google.com/maps/search/?api=1&query=Ayrshire+Garden+Rooms";
   const servingText = hasLocationMap
-    ? `Serving ${footerLocation!.name} and ${footerLocation!.regionLabel || "Scotland"}`
+    ? `Serving ${footerLocation!.name} and ${footerLocation!.regionLabel || "Ayrshire"}`
     : "Serving Ayrshire and Scotland Wide";
 
   return (
@@ -36,7 +36,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
               Ayrshire Garden Rooms
             </div>
             <p className="text-white/80 text-sm box-border caret-transparent max-w-xs leading-relaxed">
-              Fully qualified and insured garden room specialists. Professional garden room installation across Scotland. Transform your outdoor space with our expert craftsmanship.
+              Fully qualified and insured garden room specialists. Professional garden room installation across Ayrshire. Transform your outdoor space with our expert craftsmanship.
             </p>
           </div>
           <div className="box-border caret-transparent flex flex-col gap-y-3">
@@ -51,9 +51,6 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
             </a>
             <a href="/garden-rooms" className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300">
               Garden Rooms
-            </a>
-            <a href="/decking" className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300">
-              Decking
             </a>
             <a href="/locations" className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300">
               Locations

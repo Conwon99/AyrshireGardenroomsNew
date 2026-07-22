@@ -39,6 +39,25 @@
   status = 301
   force = true
 
+# Decking service removed - site is garden rooms only. Redirect old URLs.
+[[redirects]]
+  from = "https://ayrshiregardenrooms.co.uk/decking"
+  to = "https://ayrshiregardenrooms.co.uk/garden-rooms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ayrshiregardenrooms.co.uk/decking/"
+  to = "https://ayrshiregardenrooms.co.uk/garden-rooms"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "https://ayrshiregardenrooms.co.uk/:location/decking"
+  to = "https://ayrshiregardenrooms.co.uk/:location/garden-rooms"
+  status = 301
+  force = true
+
 # Security headers
 [[headers]]
   for = "/*"

@@ -23,10 +23,10 @@ export function getStaticPaths() {
 
 const { location } = Astro.props as { location: Location };
 
-const title = `Garden Rooms & Decking ${location.name} | ${location.regionLabel} | Ayrshire Garden Rooms`;
-const description = `Professional garden room and decking installation in ${location.name}. ${location.neighborhoods.slice(0, 3).join(", ")} and surrounding areas. Free quotes, fully insured.`;
+const title = `Garden Rooms ${location.name} | ${location.regionLabel} | Ayrshire Garden Rooms`;
+const description = `Professional garden room installation in ${location.name}. ${location.neighborhoods.slice(0, 3).join(", ")} and surrounding areas. Free quotes, fully insured.`;
 const canonical = `${siteUrl}/${location.slug}`;
-const keywords = `garden rooms ${location.name}, decking ${location.name}, garden room installation ${location.regionLabel}, deck installation ${location.name}`;
+const keywords = `garden rooms ${location.name}, garden room installation ${location.name}, garden room installation ${location.regionLabel}, garden room builders ${location.name}`;
 
 const breadcrumbs = [
   { name: "Home", url: "/" },
@@ -38,7 +38,7 @@ const locationSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": `Ayrshire Garden Rooms - ${location.name}`,
-  "description": `Professional garden room and decking installation in ${location.name} and ${location.regionLabel}.`,
+  "description": `Professional garden room installation in ${location.name} and ${location.regionLabel}.`,
   "url": canonical,
   "telephone": CANONICAL_PHONE_TEL,
   "address": {

@@ -18,7 +18,7 @@ export const GardenRoomsContactForm = () => {
             const pathname = window.location.pathname;
             if (pathname === "/contact") {
               trackFormStart('contact');
-            } else if (pathname.includes("garden-rooms") || pathname.includes("decking")) {
+            } else if (pathname.includes("garden-rooms")) {
               trackFormStart('service');
             } else {
               trackFormStart('contact');
@@ -84,8 +84,6 @@ export const GardenRoomsContactForm = () => {
           const currentPathname = window.location.pathname;
           if (currentPathname.includes("garden-rooms")) {
             service = "Garden Rooms";
-          } else if (currentPathname.includes("decking")) {
-            service = "Decking";
           }
         }
         formData.append("service", service);

@@ -15,8 +15,8 @@ export const GardenRoomsContactForm = ({ location }: GardenRoomsContactFormProps
           </h2>
           <p className="text-lg md:text-xl text-white/90 box-border caret-transparent max-w-3xl mx-auto">
             {location
-              ? `Fill out the form below and we'll get back to you as soon as possible to discuss your garden room project in ${location.name}. Serving ${location.name}, ${location.regionLabel || "Scotland"} and surrounding areas. Free quotes available.`
-              : "Fill out the form below and we'll get back to you as soon as possible to discuss your garden room project. Serving all of Scotland. Free quotes available for all garden room installations."}
+              ? `Fill out the form below and we'll get back to you as soon as possible to discuss your garden room project in ${location.name}. Serving ${location.name}, ${location.regionLabel || "Ayrshire"} and surrounding areas. Free quotes available.`
+              : "Fill out the form below and we'll get back to you as soon as possible to discuss your garden room project. Serving all of Ayrshire. Free quotes available for all garden room installations."}
           </p>
         </div>
         

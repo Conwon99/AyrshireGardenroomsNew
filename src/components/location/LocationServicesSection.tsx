@@ -18,20 +18,13 @@ export const LocationServicesSection = ({ location }: LocationServicesSectionPro
             Our Services in {location.name}
           </h2>
         </div>
-        <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:max-w-[1000px] md:mx-auto">
+        <div className="box-border caret-transparent grid grid-cols-[1fr] max-w-[500px] mx-auto">
           <ServiceCard
             href={`${base}/garden-rooms`}
             iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
             iconAlt={`Garden room installation ${location.name} - Ayrshire Garden Rooms`}
             title="Garden Rooms"
             description={`Professional garden room installation in ${location.name} and across ${location.regionLabel}. Create additional living space with our expert team. Free quotes, fully insured.`}
-          />
-          <ServiceCard
-            href={`${base}/decking`}
-            iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
-            iconAlt={`Deck installation ${location.name} - Ayrshire Garden Rooms`}
-            title="Decking"
-            description={`Expert deck installation in ${location.name} and across ${location.regionLabel}. Transform your outdoor space with quality decking. Free quotes, fully insured.`}
           />
         </div>
       </div>

@@ -6,8 +6,8 @@ export const ExperienceImage = () => {
     <div className="relative self-start box-border caret-transparent overflow-hidden rounded-[20px]">
       <div className="relative">
         <img
-          src="/ABOUTMCINES.webp"
-          alt="Ayrshire Fencing Group team working on fencing and decking projects in Ayrshire"
+          src="/imgs/WhatsApp Image 2025-12-27 at 4.02.59 PM.jpeg"
+          alt="Ayrshire Garden Rooms team working on a garden room installation in Ayrshire"
           className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full scale-[1.03587px] md:scale-[1.03477px]"
         />
         <div 

@@ -18,7 +18,6 @@ Allow: /
 Allow: /about
 Allow: /contact
 Allow: /garden-rooms
-Allow: /decking
 Allow: /projects
 
 # Sitemap location

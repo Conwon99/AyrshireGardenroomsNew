@@ -5,8 +5,8 @@ export const AboutExperience = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
           <div>
             <img
-              src="/imgs/decking/WhatsApp Image 2026-01-27 at 6.23.47 PM (1).jpeg"
-              alt="Professional decking installation by Ayrshire Garden Rooms"
+              src="/imgs/WhatsApp Image 2025-12-27 at 4.01.38 PM (3).jpeg"
+              alt="Professional garden room installation by Ayrshire Garden Rooms"
               loading="lazy"
               className="w-full h-auto rounded-lg shadow-xl object-cover"
             />
@@ -17,7 +17,7 @@ export const AboutExperience = () => {
             </h2>
             <div className="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed mb-8">
               <p>
-                From compact garden offices to large outdoor living spaces and beautiful decking installations, we bring quality materials and expert craftsmanship to every garden room and decking project across Scotland.
+                From compact garden offices to large outdoor living spaces, we bring quality materials and expert craftsmanship to every garden room project across Ayrshire.
               </p>
               <p>
                 We're fully qualified and insured, giving you complete peace of mind. Every project is backed by our commitment to quality and customer satisfaction.

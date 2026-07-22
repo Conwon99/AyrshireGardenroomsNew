@@ -93,19 +93,6 @@ export const DesktopNav = ({ isMobileMenuOpen = false, onCloseMobileMenu }: Desk
         </li>
         <li className="box-border caret-transparent min-h-0 min-w-0 bg-[position:0px_0px] mx-0 w-full md:min-h-[auto] md:min-w-[auto] md:mx-1 lg:mx-1.5 md:w-auto md:flex md:items-center">
           <a
-            href="/decking"
-            onClick={() => {
-              if (onCloseMobileMenu) {
-                onCloseMobileMenu();
-              }
-            }}
-            className="text-white box-border caret-transparent flex justify-center items-center w-full text-center py-3 md:text-white hover:text-green-500 hover:border-green-500 text-lg md:text-sm lg:text-[15px] leading-6 md:leading-5 lg:leading-6"
-          >
-            Decking
-          </a>
-        </li>
-        <li className="box-border caret-transparent min-h-0 min-w-0 bg-[position:0px_0px] mx-0 w-full md:min-h-[auto] md:min-w-[auto] md:mx-1 lg:mx-1.5 md:w-auto md:flex md:items-center">
-          <a
             href="/contact"
             onClick={() => {
               if (onCloseMobileMenu) {

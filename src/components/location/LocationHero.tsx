@@ -28,7 +28,7 @@ export const LocationHero = ({ location }: LocationHeroProps) => {
                 />
               </svg>
             </span>{" "}
-            Garden Rooms & Decking
+            Garden Rooms
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 leading-relaxed max-w-3xl">
             {location.heroIntro}

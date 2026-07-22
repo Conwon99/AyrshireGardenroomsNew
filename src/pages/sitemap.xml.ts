@@ -11,7 +11,6 @@ const staticPages: { path: string; priority: string; changefreq: string }[] = [
   { path: '/contact', priority: '0.9', changefreq: 'monthly' },
   { path: '/locations', priority: '0.8', changefreq: 'monthly' },
   { path: '/garden-rooms', priority: '0.9', changefreq: 'weekly' },
-  { path: '/decking', priority: '0.9', changefreq: 'weekly' },
   { path: '/projects', priority: '0.7', changefreq: 'monthly' },
 ];
 

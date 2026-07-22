@@ -52,8 +52,8 @@ export const AboutValues = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
         </svg>
       ),
-      title: "Scotland Wide",
-      description: "Serving customers across all of Scotland with professional, reliable service."
+      title: "Ayrshire Wide",
+      description: "Serving customers across all of Ayrshire with professional, reliable service."
     }
   ];
 

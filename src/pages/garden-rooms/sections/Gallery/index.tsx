@@ -27,7 +27,7 @@ export const GardenRoomsGallery = ({ location }: GardenRoomsGalleryProps) => {
             Our Garden Room Projects{location ? ` in ${location.name}` : ""}
           </h2>
           <p className="text-lg md:text-xl text-gray-600 box-border caret-transparent max-w-3xl mx-auto">
-            {location ? `Take a look at some of our recent garden room installations in ${location.name} and across Scotland` : "Take a look at some of our recent garden room installations across Scotland"}
+            {location ? `Take a look at some of our recent garden room installations in ${location.name} and across Ayrshire` : "Take a look at some of our recent garden room installations across Ayrshire"}
           </p>
         </div>
         
@@ -41,7 +41,7 @@ export const GardenRoomsGallery = ({ location }: GardenRoomsGalleryProps) => {
               <div className="box-border caret-transparent aspect-[4/3] overflow-hidden">
                 <img
                   src={image}
-                  alt={`Garden room installation project ${index + 1}${location ? ` in ${location.name}` : " in Scotland"} - Custom garden room by Ayrshire Garden Rooms`}
+                  alt={`Garden room installation project ${index + 1}${location ? ` in ${location.name}` : " in Ayrshire"} - Custom garden room by Ayrshire Garden Rooms`}
                   loading="lazy"
                   className="w-full h-full object-cover box-border caret-transparent group-hover:scale-110 transition-transform duration-300"
                 />
@@ -85,7 +85,7 @@ export const GardenRoomsGallery = ({ location }: GardenRoomsGalleryProps) => {
             </button>
             <img
               src={selectedImage}
-              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Scotland"} - Custom garden room by Ayrshire Garden Rooms`}
+              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Ayrshire"} - Custom garden room by Ayrshire Garden Rooms`}
               className="max-w-full max-h-[90vh] object-contain box-border caret-transparent rounded-lg"
             />
           </div>

@@ -8,11 +8,11 @@ interface GardenRoomsHeroProps {
 export const GardenRoomsHero = ({ location }: GardenRoomsHeroProps) => {
   const headingText = location
     ? `Garden Room Installation in ${location.name}`
-    : "Garden Room Installation Across Scotland";
+    : "Garden Room Installation Across Ayrshire";
   const subText = location
-    ? `Create your perfect outdoor space. Professional garden room installation in ${location.name} and across ${location.regionLabel || "Scotland"}. Free quotes, fully insured, years of experience.`
-    : "Create your perfect outdoor space. Professional garden room installation across Scotland. Free quotes, fully insured, years of experience.";
-  const altSuffix = location ? ` in ${location.name}` : " in Scotland";
+    ? `Create your perfect outdoor space. Professional garden room installation in ${location.name} and across ${location.regionLabel || "Ayrshire"}. Free quotes, fully insured, years of experience.`
+    : "Create your perfect outdoor space. Professional garden room installation across Ayrshire. Free quotes, fully insured, years of experience.";
+  const altSuffix = location ? ` in ${location.name}` : " in Ayrshire";
 
   const images = [
     "/imgs/WhatsApp Image 2025-12-27 at 4.01.37 PM (1).jpeg",

@@ -10,7 +10,7 @@ export const ContactForm = () => {
             Request Your Free Quote
           </h2>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            Fill out the form below and we'll get back to you as soon as possible to discuss your garden room or decking project. Serving all of Scotland. Free quotes available for all installations.
+            Fill out the form below and we'll get back to you as soon as possible to discuss your garden room project. Serving all of Ayrshire. Free quotes available for all installations.
           </p>
         </div>
         
@@ -68,8 +68,8 @@ export const ContactForm = () => {
                   </svg>
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-3">Service Area</h3>
-                <p className="text-green-800 text-lg font-semibold">Across Scotland</p>
-                <p className="text-gray-600 text-sm mt-2">Serving all of Scotland</p>
+                <p className="text-green-800 text-lg font-semibold">Across Ayrshire</p>
+                <p className="text-gray-600 text-sm mt-2">Serving all of Ayrshire</p>
               </div>
             </div>
           </div>

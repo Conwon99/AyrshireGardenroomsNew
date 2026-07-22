@@ -14,8 +14,8 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
 
   const areaAnswer = location
-    ? `We serve ${location.name}, ${location.regionLabel || "Scotland"} and all of Scotland. Professional garden room installation services available across the area. Contact us to see if we cover your location.`
-    : "We serve all of Scotland. Professional garden room installation services available across Scotland. Contact us to see if we cover your area.";
+    ? `We serve ${location.name}, ${location.regionLabel || "Ayrshire"} and the wider Ayrshire area. Professional garden room installation services available across the area. Contact us to see if we cover your location.`
+    : "We serve all of Ayrshire. Professional garden room installation services available across Ayrshire. Contact us to see if we cover your area.";
 
   const faqs: FAQItem[] = [
     {
@@ -23,12 +23,12 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
       answer: "A garden room is a versatile outdoor structure that can be used as a home office, gym, relaxation space, hobby room, or guest accommodation. It's a fully insulated, weatherproof building that extends your living space into your garden. Perfect for creating additional space without the need for a home extension."
     },
     {
-      question: "Do I need planning permission for a garden room in Scotland?",
-      answer: "In most cases, garden rooms don't require planning permission if they meet certain criteria (size, height, location). In Scotland, garden rooms typically don't need planning permission if they're under 4 metres in height, don't take up more than 50% of your garden, and aren't used as a separate dwelling. However, it's always best to check with your local council. We can advise you on planning permission requirements during your free consultation."
+      question: "Do I need planning permission for a garden room in Ayrshire?",
+      answer: "In most cases, garden rooms don't require planning permission if they meet certain criteria (size, height, location). In Ayrshire, as elsewhere in Scotland, garden rooms typically don't need planning permission if they're under 4 metres in height, don't take up more than 50% of your garden, and aren't used as a separate dwelling. However, it's always best to check with your local council. We can advise you on planning permission requirements during your free consultation."
     },
     {
-      question: "How much does a garden room cost in Scotland?",
-      answer: "Garden room costs vary depending on size, specifications, and features. Basic garden rooms start from around £10,000, while larger, fully-equipped garden offices with heating and electricity can range from £15,000 to £30,000+. The final cost depends on your specific requirements including size, insulation, electrical work, heating, and custom features. We provide free, no-obligation quotes for all garden room projects across Scotland."
+      question: "How much does a garden room cost in Ayrshire?",
+      answer: "Garden room costs vary depending on size, specifications, and features. Basic garden rooms start from around £10,000, while larger, fully-equipped garden offices with heating and electricity can range from £15,000 to £30,000+. The final cost depends on your specific requirements including size, insulation, electrical work, heating, and custom features. We provide free, no-obligation quotes for all garden room projects across Ayrshire."
     },
     {
       question: "How long does garden room installation take?",
@@ -36,11 +36,11 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
     },
     {
       question: "What materials do you use for garden rooms?",
-      answer: "We use high-quality, weather-resistant materials including treated timber, composite materials, and durable roofing. All materials are chosen for their longevity and ability to withstand Scottish weather conditions. Our garden rooms feature proper insulation, weatherproofing, and quality finishes to ensure they last for years to come."
+      answer: "We use high-quality, weather-resistant materials including treated timber, composite materials, and durable roofing. All materials are chosen for their longevity and ability to withstand Ayrshire's weather conditions. Our garden rooms feature proper insulation, weatherproofing, and quality finishes to ensure they last for years to come."
     },
     {
       question: "Can I use my garden room all year round?",
-      answer: "Yes! Our garden rooms are fully insulated and can be fitted with heating and electricity, making them comfortable to use throughout all seasons in Scotland. With proper insulation and heating options, your garden room will be warm in winter and cool in summer, perfect for year-round use as a home office, gym, or relaxation space."
+      answer: "Yes! Our garden rooms are fully insulated and can be fitted with heating and electricity, making them comfortable to use throughout all seasons in Ayrshire. With proper insulation and heating options, your garden room will be warm in winter and cool in summer, perfect for year-round use as a home office, gym, or relaxation space."
     },
     {
       question: "What areas do you cover for garden room installation?",
@@ -48,7 +48,7 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
     },
     {
       question: "Do garden rooms need insulation?",
-      answer: "Yes, proper insulation is essential for year-round use of your garden room, especially in Scotland's climate. Our garden rooms come with full insulation as standard, ensuring they stay warm in winter and cool in summer. This makes them suitable for use as home offices, gyms, or living spaces throughout the year."
+      answer: "Yes, proper insulation is essential for year-round use of your garden room, especially in Ayrshire's climate. Our garden rooms come with full insulation as standard, ensuring they stay warm in winter and cool in summer. This makes them suitable for use as home offices, gyms, or living spaces throughout the year."
     },
     {
       question: "Can I have electricity and heating in my garden room?",
@@ -132,7 +132,7 @@ export const GardenRoomsFAQ = ({ location }: GardenRoomsFAQProps) => {
           <div className="box-border caret-transparent lg:sticky lg:top-8">
             <img
               src="/imgs/WhatsApp Image 2025-12-27 at 4.01.38 PM (2).jpeg"
-              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Scotland"} - Custom garden office by Ayrshire Garden Rooms`}
+              alt={`Garden room installation project${location ? ` in ${location.name}` : " in Ayrshire"} - Custom garden office by Ayrshire Garden Rooms`}
               loading="lazy"
               className="w-full h-auto rounded-lg shadow-xl object-cover"
             />

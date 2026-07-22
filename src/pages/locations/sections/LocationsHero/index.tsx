@@ -18,7 +18,7 @@ export const LocationsHero = () => {
             </span> Serve
           </h1>
           <p className="text-lg sm:text-xl md:text-2xl text-gray-100 leading-relaxed max-w-3xl">
-            Garden room and decking installation across 40 towns in and around Ayrshire, plus the Scotland Central Belt. Free quotes, fully insured.
+            Garden room installation across 40 towns in and around Ayrshire, plus the Scotland Central Belt. Free quotes, fully insured.
           </p>
         </div>
       </div>

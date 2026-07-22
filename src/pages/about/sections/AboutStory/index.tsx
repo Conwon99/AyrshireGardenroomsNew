@@ -12,10 +12,10 @@ export const AboutStory = () => {
                 Ayrshire Garden Rooms was founded on a passion for creating beautiful, functional garden rooms and outdoor living spaces. We're a trusted local business built on quality craftsmanship and exceptional customer service.
               </p>
               <p>
-                We specialize in designing and installing custom garden rooms and professional decking solutions. Every project we undertake is built with attention to detail, using quality materials and expert workmanship that stands the test of time.
+                We specialize in designing and installing custom garden rooms. Every project we undertake is built with attention to detail, using quality materials and expert workmanship that stands the test of time.
               </p>
               <p>
-                Our commitment to excellence has earned us a reputation as one of Scotland's leading garden room and decking installation specialists. We take pride in every project, whether it's a compact garden office, a spacious outdoor living area, or a beautiful deck that enhances your home.
+                Our commitment to excellence has earned us a reputation as one of Ayrshire's leading garden room installation specialists. We take pride in every project, whether it's a compact garden office or a spacious outdoor living area that enhances your home.
               </p>
             </div>
           </div>

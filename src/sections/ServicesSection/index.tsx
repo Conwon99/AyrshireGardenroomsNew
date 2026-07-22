@@ -10,20 +10,13 @@ export const ServicesSection = () => {
             Our Services
           </h2>
         </div>
-        <div className="box-border caret-transparent gap-x-[30px] grid auto-cols-[1fr] grid-cols-[1fr] grid-rows-[auto] gap-y-[30px] md:grid-cols-[1fr_1fr] md:max-w-[1000px] md:mx-auto">
+        <div className="box-border caret-transparent grid grid-cols-[1fr] max-w-[500px] mx-auto">
           <ServiceCard
             href="/garden-rooms"
             iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
             iconAlt="Garden room installation service icon"
             title="Garden Rooms"
-            description="Create additional living space with our professional garden room installations. High-quality garden rooms designed to enhance your outdoor living experience. Professional installation across Scotland with free quotes, fully insured, and years of experience."
-          />
-          <ServiceCard
-            href="/decking"
-            iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
-            iconAlt="Deck installation service icon"
-            title="Decking"
-            description="Transform your outdoor space with beautiful, professional decking. Expert deck installation across Scotland. Quality materials, custom designs, and professional installation with free quotes, fully insured, and years of experience."
+            description="Create additional living space with our professional garden room installations. High-quality, custom-designed garden rooms built to enhance your outdoor living experience across Ayrshire. Free quotes, fully insured."
           />
         </div>
       </div>

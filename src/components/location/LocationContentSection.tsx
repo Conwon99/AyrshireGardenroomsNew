@@ -22,15 +22,6 @@ export const LocationContentSection = ({ location }: LocationContentSectionProps
           </p>
 
           <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
-            Decking in {location.name}
-          </h2>
-          <p className="leading-relaxed mb-6">
-            From composite to timber, we install decking across {location.name} that stands up to
-            the climate. Our decking solutions suit local properties and gardens, with professional
-            installation and a focus on durability. Ideal for {location.neighborhoods.slice(0, 2).join(" and ")} and the wider area.
-          </p>
-
-          <h2 className="text-2xl font-bold text-gray-900 mt-10 mb-4">
             Why Choose Us in {location.name}
           </h2>
           <p className="leading-relaxed">{location.localKnowledge}</p>

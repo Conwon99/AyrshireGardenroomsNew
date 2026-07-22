@@ -22,14 +22,14 @@ export const LocationServicesSection = ({ location }: LocationServicesSectionPro
           <ServiceCard
             href={`${base}/garden-rooms`}
             iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
-            iconAlt={`Garden room installation ${location.name} - Glenhaus Garden Rooms`}
+            iconAlt={`Garden room installation ${location.name} - Ayrshire Garden Rooms`}
             title="Garden Rooms"
             description={`Professional garden room installation in ${location.name} and across ${location.regionLabel}. Create additional living space with our expert team. Free quotes, fully insured.`}
           />
           <ServiceCard
             href={`${base}/decking`}
             iconUrl="https://c.animaapp.com/mial13ktyN5Jkh/assets/670f922ca00205c2937593ea_service-04.svg"
-            iconAlt={`Deck installation ${location.name} - Glenhaus Garden Rooms`}
+            iconAlt={`Deck installation ${location.name} - Ayrshire Garden Rooms`}
             title="Decking"
             description={`Expert deck installation in ${location.name} and across ${location.regionLabel}. Transform your outdoor space with quality decking. Free quotes, fully insured.`}
           />

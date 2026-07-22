@@ -1,8 +1,9 @@
 // Phone number tracking configuration
-export const CANONICAL_PHONE = "07375 872331";
-export const CANONICAL_PHONE_TEL = "+447375872331";
-export const TRACKING_PHONE = "+44 7375 872331";
-export const TRACKING_PHONE_TEL = "+447375872331";
+// TODO: replace with the real Ayrshire Garden Rooms contact number before launch
+export const CANONICAL_PHONE = "[ADD PHONE NUMBER]";
+export const CANONICAL_PHONE_TEL = "";
+export const TRACKING_PHONE = "[ADD PHONE NUMBER]";
+export const TRACKING_PHONE_TEL = "";
 
 // Format phone number for display (preserves +44 and formats nicely)
 export const formatTrackingPhone = (phone: string): string => {

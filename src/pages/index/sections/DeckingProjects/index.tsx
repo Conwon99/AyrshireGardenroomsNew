@@ -57,7 +57,7 @@ export const DeckingProjects = () => {
               <div className="box-border caret-transparent aspect-[4/3] overflow-hidden">
                 <img
                   src={image}
-                  alt={`Decking installation project ${index + 1} in Scotland - Professional decking by Glenhaus Garden Rooms`}
+                  alt={`Decking installation project ${index + 1} in Scotland - Professional decking by Ayrshire Garden Rooms`}
                   loading="lazy"
                   className="w-full h-full object-cover box-border caret-transparent group-hover:scale-110 transition-transform duration-300"
                 />
@@ -107,7 +107,7 @@ export const DeckingProjects = () => {
             </button>
             <img
               src={selectedImage}
-              alt="Decking installation project in Scotland - Professional decking by Glenhaus Garden Rooms"
+              alt="Decking installation project in Scotland - Professional decking by Ayrshire Garden Rooms"
               className="max-w-full max-h-[90vh] object-contain box-border caret-transparent rounded-lg"
             />
           </div>

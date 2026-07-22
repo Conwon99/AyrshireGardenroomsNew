@@ -1,5 +1,5 @@
-# Robots.txt for Glenhaus Garden Rooms
-# https://glenhausgardenroom.com/robots.txt
+# Robots.txt for Ayrshire Garden Rooms
+# https://ayrshiregardenrooms.co.uk/robots.txt
 
 # Allow all search engines
 User-agent: *
@@ -22,7 +22,7 @@ Allow: /decking
 Allow: /projects
 
 # Sitemap location
-Sitemap: https://glenhausgardenroom.com/sitemap.xml
+Sitemap: https://ayrshiregardenrooms.co.uk/sitemap.xml
 
 # Specific crawler instructions
 User-agent: Googlebot

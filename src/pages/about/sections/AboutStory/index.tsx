@@ -9,7 +9,7 @@ export const AboutStory = () => {
             </h2>
             <div className="space-y-4 text-gray-700 text-base md:text-lg leading-relaxed">
               <p>
-                Founded in 2011, Glenhaus Garden Rooms has been transforming outdoor spaces across Scotland for over 13 years. What started as a passion for creating beautiful, functional garden rooms has grown into a trusted business known for quality craftsmanship and exceptional customer service.
+                Ayrshire Garden Rooms was founded on a passion for creating beautiful, functional garden rooms and outdoor living spaces. We're a trusted local business built on quality craftsmanship and exceptional customer service.
               </p>
               <p>
                 We specialize in designing and installing custom garden rooms and professional decking solutions. Every project we undertake is built with attention to detail, using quality materials and expert workmanship that stands the test of time.
@@ -22,7 +22,7 @@ export const AboutStory = () => {
           <div className="relative">
             <img
               src="/imgs/WhatsApp Image 2025-12-27 at 4.01.37 PM (1).jpeg"
-              alt="Glenhaus Garden Rooms project - Professional garden room installation"
+              alt="Ayrshire Garden Rooms project - Professional garden room installation"
               loading="lazy"
               className="w-full h-auto rounded-lg shadow-xl object-cover"
             />

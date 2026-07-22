@@ -71,7 +71,7 @@ export const DeckingFeatures = ({ location }: DeckingFeaturesProps) => {
           <div className="relative self-start box-border caret-transparent overflow-hidden rounded-[20px]">
             <img
               src="/imgs/decking/WhatsApp Image 2026-01-27 at 6.23.47 PM (1).jpeg"
-              alt={`Professional deck installation${location ? ` in ${location.name}` : " in Scotland"} by Glenhaus Garden Rooms - Expert decking builders`}
+              alt={`Professional deck installation${location ? ` in ${location.name}` : " in Scotland"} by Ayrshire Garden Rooms - Expert decking builders`}
               loading="lazy"
               className="box-border caret-transparent inline-block h-full max-w-full object-cover w-full scale-[1.03587px] md:scale-[1.03477px]"
             />
@@ -85,8 +85,8 @@ export const DeckingFeatures = ({ location }: DeckingFeaturesProps) => {
               </h2>
               <p className="text-gray-700 text-sm sm:text-base box-border caret-transparent mt-2.5 mb-5 md:mt-5 md:mb-5 leading-relaxed">
                 {location
-                  ? `Professional deck installation in ${location.name} and across ${location.regionLabel || "Scotland"}. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect deck. Over 13 years of experience.`
-                  : "Professional deck installation across Scotland. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect deck. Over 13 years of experience."}
+                  ? `Professional deck installation in ${location.name} and across ${location.regionLabel || "Scotland"}. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect deck. Fully qualified and insured.`
+                  : "Professional deck installation across Scotland. Quality materials, expert craftsmanship, and custom design - everything you need for your perfect deck. Fully qualified and insured."}
               </p>
               <div className="box-border caret-transparent mb-5 md:mb-[50px]">
                 <ul className="text-gray-900 text-sm sm:text-base md:text-lg box-border caret-transparent list-none pl-0 space-y-2 md:space-y-3">

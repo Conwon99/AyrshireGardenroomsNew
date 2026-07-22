@@ -19,13 +19,13 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
   const mapSrc = hasLocationMap
     ? `https://www.google.com/maps?q=${footerLocation!.geo!.latitude},${footerLocation!.geo!.longitude}&z=13&output=embed`
     : "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2280.1234567890123!2d-4.655!3d55.619!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTXCsDM3JzA4LjQiTiA0wrAzOScxOC4wIlc!5e0!3m2!1sen!2suk!4v1234567890123!5m2!1sen!2suk";
-  const mapTitle = hasLocationMap ? `Map of ${footerLocation!.name} - Glenhaus Garden Rooms` : "Glenhaus Garden Rooms - Google Business Profile";
+  const mapTitle = hasLocationMap ? `Map of ${footerLocation!.name} - Ayrshire Garden Rooms` : "Ayrshire Garden Rooms - Google Business Profile";
   const viewOnMapsHref = hasLocationMap
     ? `https://www.google.com/maps/search/?api=1&query=${footerLocation!.geo!.latitude},${footerLocation!.geo!.longitude}`
-    : "https://www.google.com/maps/place/Ayrshire+Fencing+Group";
+    : "https://www.google.com/maps/search/?api=1&query=Ayrshire+Garden+Rooms";
   const servingText = hasLocationMap
     ? `Serving ${footerLocation!.name} and ${footerLocation!.regionLabel || "Scotland"}`
-    : "Serving Scotland Wide";
+    : "Serving Ayrshire and Scotland Wide";
 
   return (
     <section className="text-white bg-[#323232] box-border caret-transparent pt-[60px] pb-7 md:pt-[100px] md:pb-10">
@@ -33,7 +33,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
         <div className="box-border caret-transparent gap-x-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-y-6 md:gap-x-8 md:gap-y-8">
           <div className="box-border caret-transparent flex flex-col gap-y-4">
             <div className="text-white text-lg font-semibold box-border caret-transparent mb-2">
-              Glenhaus Garden Rooms
+              Ayrshire Garden Rooms
             </div>
             <p className="text-white/80 text-sm box-border caret-transparent max-w-xs leading-relaxed">
               Fully qualified and insured garden room specialists. Professional garden room installation across Scotland. Transform your outdoor space with our expert craftsmanship.
@@ -95,7 +95,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
               target="_blank"
               rel="noopener noreferrer"
               className="text-white/80 text-sm box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent transition-colors duration-300 flex items-center gap-2"
-              aria-label="Follow Glenhaus Garden Rooms on Facebook"
+              aria-label="Follow Ayrshire Garden Rooms on Facebook"
             >
               <svg className="w-5 h-5 flex-shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
@@ -153,7 +153,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
                 View on Google Maps
               </a>
               <a
-                href={hasLocationMap ? viewOnMapsHref : "https://www.google.com/maps/place/Ayrshire+Fencing+Group/@55.619,-4.655,15z/data=!4m6!3m5!1s0x0:0x0!8m2!3d55.619!4d-4.655!16s%2Fg%2F11c0x0x0"}
+                href={viewOnMapsHref}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-white/80 text-xs box-border caret-transparent hover:text-[#8a9168] hover:decoration-transparent underline transition-colors duration-300"
@@ -169,7 +169,7 @@ export const Footer = ({ location: footerLocation }: FooterProps) => {
         
         <div className="box-border caret-transparent border-t border-white/20 mt-10 pt-6 text-center">
             <p className="text-white/60 text-sm box-border caret-transparent">
-            © {new Date().getFullYear()} Glenhaus Garden Rooms. All rights reserved.
+            © {new Date().getFullYear()} Ayrshire Garden Rooms. All rights reserved.
           </p>
         </div>
       </div>

@@ -13,10 +13,10 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title="Areas We Serve | Garden Rooms & Decking Scotland | Ayrshire Garden Rooms"
-  description="Garden room and decking installation across Scotland Central Belt and Ayrshire. We serve Glasgow, Edinburgh, Stirling, Ayr, Irvine and more. Free quotes."
+  title="Areas We Serve | Garden Rooms & Decking Across Ayrshire | Ayrshire Garden Rooms"
+  description="Garden room and decking installation across 40 towns in and around Ayrshire, plus the Scotland Central Belt. We serve Irvine, Kilmarnock, Ayr, Troon, Largs and more. Free quotes."
   canonical="https://ayrshiregardenrooms.co.uk/locations"
-  keywords="garden rooms scotland, decking scotland, garden room installation glasgow, decking edinburgh, garden rooms ayrshire, decking central belt"
+  keywords="garden rooms ayrshire, decking ayrshire, garden room installation irvine, decking kilmarnock, garden rooms ayr, decking central belt scotland"
   breadcrumbs={breadcrumbs}
 >
   <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
@@ -25,14 +25,14 @@ const breadcrumbs = [
       <LocationsHero client:load />
       <LocationsGrid
         client:load
-        regionTitle="Scotland Central Belt"
-        locations={centralBeltLocations}
+        regionTitle="Ayrshire"
+        regionSubtitle="Our home turf — 40 towns across North, East, and South Ayrshire."
+        locations={ayrshireLocations}
       />
       <LocationsGrid
         client:load
-        regionTitle="Ayrshire – High-Value Add-Ons"
-        regionSubtitle="Excellent for garden rooms and decking across Ayrshire."
-        locations={ayrshireLocations}
+        regionTitle="Also Serving the Scotland Central Belt"
+        locations={centralBeltLocations}
       />
     </div>
     <Footer client:load />

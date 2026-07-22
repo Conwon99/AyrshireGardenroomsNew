@@ -4,13 +4,15 @@ export const Logo = () => {
       <a
         href="/"
         aria-label="home"
-        className="relative text-gray-900 box-border caret-transparent block h-20 max-h-20 overflow-visible md:h-20 md:max-h-20 lg:h-24 lg:max-h-24"
+        className="relative text-gray-900 box-border caret-transparent flex items-center h-14 max-h-14 overflow-visible md:h-16 md:max-h-16 lg:h-[72px] lg:max-h-[72px]"
       >
-        <img
-          src="/logo-garden-rooms.png"
-          alt="Ayrshire Garden Rooms Logo"
-          className="box-border caret-transparent inline-block h-full max-w-full object-contain scale-[1.6] md:scale-[1.5] lg:scale-[1.7] origin-left"
-        />
+        <div className="bg-white rounded-xl h-full flex items-center px-2 shadow-sm">
+          <img
+            src="/logo-garden-rooms.png"
+            alt="Ayrshire Garden Rooms Logo"
+            className="box-border caret-transparent h-full w-auto object-contain"
+          />
+        </div>
       </a>
     </div>
   );

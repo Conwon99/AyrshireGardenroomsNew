@@ -14,7 +14,7 @@ export const BookingForm = () => {
         if (errorMessage) errorMessage.classList.add("hidden");
 
         const formData = new FormData(form);
-        formData.append("websiteUrl", "www.ayrshirefencinggroup.com");
+        formData.append("websiteUrl", "https://ayrshiregardenrooms.co.uk/");
 
         try {
           const response = await fetch("https://formspree.io/f/xqarbvgy", {

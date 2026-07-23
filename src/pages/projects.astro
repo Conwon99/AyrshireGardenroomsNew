@@ -2,18 +2,26 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { ProjectsSection } from "@/sections/ProjectsSection";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Projects", url: "/projects" },
+];
 ---
 
-<BaseLayout 
-  title="Our Projects | Completed Garden Room Projects | Ayrshire Garden Rooms"
+<BaseLayout
+  title="Garden Room Projects | Ayrshire Garden Rooms"
   description="View our completed garden room projects across Ayrshire. Professional installations showcasing quality workmanship and expert craftsmanship."
   canonical="https://ayrshiregardenrooms.co.uk/projects"
   keywords="garden room projects ayrshire, completed garden rooms ayrshire, garden room installations ayrshire"
+  breadcrumbs={breadcrumbs}
 >
   <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
     <Header client:load />
     <div class="pt-[80px] md:pt-[100px]">
+      <Breadcrumbs items={breadcrumbs} />
       <ProjectsSection client:load />
     </div>
     <Footer client:load />

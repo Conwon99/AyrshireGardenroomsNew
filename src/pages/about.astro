@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { AboutHero } from "@/pages/about/sections/AboutHero";
 import { AboutStory } from "@/pages/about/sections/AboutStory";
 import { AboutValues } from "@/pages/about/sections/AboutValues";
@@ -9,17 +10,24 @@ import { AboutExperience } from "@/pages/about/sections/AboutExperience";
 import { AboutServices } from "@/pages/about/sections/AboutServices";
 import { AboutCTA } from "@/pages/about/sections/AboutCTA";
 import { GardenRoomsTestimonials } from "@/pages/garden-rooms/sections/Testimonials";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "About", url: "/about" },
+];
 ---
 
-<BaseLayout 
-  title="About Us | Ayrshire Garden Rooms - Expert Garden Room Installers"
-  description="Learn about Ayrshire Garden Rooms. Professional garden room installation specialists serving Ayrshire - Irvine, Kilmarnock, Ayr, Troon and more. Fully insured, quality workmanship."
+<BaseLayout
+  title="About Ayrshire Garden Rooms | Garden Room Installers"
+  description="Learn about Ayrshire Garden Rooms - professional garden room installation specialists serving Irvine, Kilmarnock, Ayr and more."
   canonical="https://ayrshiregardenrooms.co.uk/about"
   keywords="about ayrshire garden rooms, garden room contractors ayrshire, garden room installers ayrshire, garden room specialists ayrshire"
+  breadcrumbs={breadcrumbs}
 >
   <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
     <Header client:load />
     <div class="pt-[80px] md:pt-[100px]">
+      <Breadcrumbs items={breadcrumbs} />
       <AboutHero client:load />
     </div>
     <AboutStory client:load />

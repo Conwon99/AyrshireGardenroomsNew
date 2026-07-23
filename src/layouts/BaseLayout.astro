@@ -16,9 +16,13 @@ interface Props {
   gaId?: string;
   breadcrumbs?: BreadcrumbItem[];
   locationSchema?: Record<string, unknown>;
+  noindex?: boolean;
 }
 
-const { title, description, canonical, keywords, ogImage, gaId = "G-T9RTPLDCJ7", breadcrumbs, locationSchema } = Astro.props;
+const { title, description, canonical, keywords, ogImage, gaId = "G-T9RTPLDCJ7", breadcrumbs, locationSchema, noindex = false } = Astro.props;
+const robotsContent = noindex
+  ? "noindex, follow"
+  : "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1";
 
 const allLocationNames = getAllLocations().map((loc) => ({ "@type": "City" as const, "name": loc.name }));
 const defaultBreadcrumbs: BreadcrumbItem[] = [{ name: "Home", url: "https://ayrshiregardenrooms.co.uk/" }];
@@ -64,9 +68,9 @@ const defaultOgImage = ogImage || `${siteUrl}/og-image.jpg`;
     <meta name="geo.placename" content="Ayrshire" />
     <meta name="geo.position" content="55.6194;-4.6551" />
     <meta name="ICBM" content="55.6194, -4.6551" />
-    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-    <meta name="bingbot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+    <meta name="robots" content={robotsContent} />
+    <meta name="googlebot" content={robotsContent} />
+    <meta name="bingbot" content={robotsContent} />
     
     <!-- Canonical URL -->
     <link rel="canonical" href={canonicalUrl} />

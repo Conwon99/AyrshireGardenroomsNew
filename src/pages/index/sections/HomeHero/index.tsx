@@ -4,7 +4,6 @@ import { trackQuoteButton } from "@/utils/analytics";
 export const HomeHero = () => {
   // Garden room images for homepage
   const images = [
-    "/imgs/WhatsApp Image 2025-12-27 at 4.01.36 PM.jpeg",
     "/imgs/WhatsApp Image 2025-12-27 at 4.01.37 PM (1).jpeg",
     "/imgs/WhatsApp Image 2025-12-27 at 4.01.37 PM (2).jpeg",
     "/imgs/WhatsApp Image 2025-12-27 at 4.01.37 PM.jpeg",

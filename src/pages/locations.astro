@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { LocationsHero } from "@/pages/locations/sections/LocationsHero";
 import { LocationsGrid } from "@/pages/locations/sections/LocationsGrid";
 import { centralBeltLocations, ayrshireLocations } from "@/data/locations";
@@ -13,8 +14,8 @@ const breadcrumbs = [
 ---
 
 <BaseLayout
-  title="Areas We Serve | Garden Rooms Across Ayrshire | Ayrshire Garden Rooms"
-  description="Garden room installation across 40 towns in and around Ayrshire, plus the Scotland Central Belt. We serve Irvine, Kilmarnock, Ayr, Troon, Largs and more. Free quotes."
+  title="Garden Room Installation Areas | Ayrshire Garden Rooms"
+  description="Garden room installation across 40 towns in and around Ayrshire, plus the Scotland Central Belt. Irvine, Kilmarnock, Ayr, Troon and more."
   canonical="https://ayrshiregardenrooms.co.uk/locations"
   keywords="garden rooms ayrshire, garden room installation irvine, garden rooms kilmarnock, garden rooms ayr, garden rooms troon, garden room builders ayrshire"
   breadcrumbs={breadcrumbs}
@@ -22,6 +23,7 @@ const breadcrumbs = [
   <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
     <Header client:load />
     <div class="pt-[80px] md:pt-[100px]">
+      <Breadcrumbs items={breadcrumbs} />
       <LocationsHero client:load />
       <LocationsGrid
         client:load

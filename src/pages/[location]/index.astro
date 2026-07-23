@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { LocationHero } from "@/components/location/LocationHero";
 import { LocationServiceIntro } from "@/components/location/LocationServiceIntro";
 import { LocationServicesSection } from "@/components/location/LocationServicesSection";
@@ -23,7 +24,7 @@ export function getStaticPaths() {
 
 const { location } = Astro.props as { location: Location };
 
-const title = `Garden Rooms ${location.name} | ${location.regionLabel} | Ayrshire Garden Rooms`;
+const title = `Garden Rooms ${location.name} | Ayrshire Garden Rooms`;
 const description = `Professional garden room installation in ${location.name}. ${location.neighborhoods.slice(0, 3).join(", ")} and surrounding areas. Free quotes, fully insured.`;
 const canonical = `${siteUrl}/${location.slug}`;
 const keywords = `garden rooms ${location.name}, garden room installation ${location.name}, garden room installation ${location.regionLabel}, garden room builders ${location.name}`;
@@ -70,6 +71,7 @@ const locationSchema = {
   <div class="text-neutral-600 text-lg font-medium bg-[#323232] box-border min-h-full pointer-events-auto text-start font-manrope">
     <Header client:load />
     <div class="pt-[80px] md:pt-[100px]">
+      <Breadcrumbs items={breadcrumbs} />
       <LocationHero location={location} client:load />
       <LocationServiceIntro location={location} client:load />
       <LocationServicesSection location={location} client:load />

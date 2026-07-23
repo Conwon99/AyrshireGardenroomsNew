@@ -2,6 +2,7 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { GardenRoomsHero } from "@/pages/garden-rooms/sections/Hero";
 import { GardenRoomsFeatures } from "@/pages/garden-rooms/sections/Features";
 import { GardenRoomsGallery } from "@/pages/garden-rooms/sections/Gallery";
@@ -28,8 +29,8 @@ export function getStaticPaths() {
 const { location, service } = Astro.props;
 const serviceName = SERVICE_NAMES[service];
 
-const title = `${serviceName} ${location.name} | Who's the Best ${serviceName} Near Me? | Ayrshire Garden Rooms`;
-const description = `Looking for the best ${serviceName.toLowerCase()} in ${location.name}? Professional ${serviceName.toLowerCase()} installation across ${location.regionLabel}. Free quotes, fully insured. Serving ${location.neighborhoods.slice(0, 2).join(", ")} and more.`;
+const title = `${serviceName} Installers in ${location.name} | Ayrshire Garden Rooms`;
+const description = `Looking for garden room installers in ${location.name}? Free quotes, fully insured, quality installation across ${location.regionLabel}.`;
 const canonical = `${siteUrl}/${location.slug}/${service}`;
 const keywords = `${serviceName.toLowerCase()} ${location.name}, ${serviceName.toLowerCase()} near me, ${location.name} ${serviceName.toLowerCase()}, ${location.regionLabel}`;
 
@@ -53,17 +54,7 @@ const locationProp = { name: location.name, regionLabel: location.regionLabel };
   <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
     <Header client:load />
     <div class="pt-[80px] md:pt-[100px]">
-      <nav class="max-w-[1204px] mx-auto px-4 sm:px-5 md:px-8 mb-4" aria-label="Breadcrumb">
-        <ol class="flex flex-wrap items-center gap-2 text-sm text-gray-400">
-          <li><a href="/" class="hover:text-white transition-colors">Home</a></li>
-          <li aria-hidden="true">/</li>
-          <li><a href="/locations" class="hover:text-white transition-colors">Locations</a></li>
-          <li aria-hidden="true">/</li>
-          <li><a href={`/${location.slug}`} class="hover:text-white transition-colors">{location.name}</a></li>
-          <li aria-hidden="true">/</li>
-          <li class="text-white font-medium" aria-current="page">{serviceName}</li>
-        </ol>
-      </nav>
+      <Breadcrumbs items={breadcrumbs} />
       <GardenRoomsHero location={locationProp} client:load />
       <GardenRoomsFeatures location={locationProp} client:load />
       <GardenRoomsGallery location={locationProp} client:load />

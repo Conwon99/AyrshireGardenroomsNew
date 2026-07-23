@@ -142,13 +142,20 @@ export const GardenRoomsFeatures = ({ location }: GardenRoomsFeaturesProps) => {
                   ))}
                 </ul>
               </div>
-              <a
-                href="#contact"
-                onClick={() => trackQuoteButton('features')}
-                className="text-white text-sm bg-green-800 box-border caret-transparent inline-block leading-[19.6px] text-center border border-green-800 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-green-900 hover:decoration-transparent shadow-[0_0_20px_rgba(22,101,52,0.5),0_0_40px_rgba(22,101,52,0.3)] hover:shadow-[0_0_30px_rgba(20,83,45,0.7),0_0_60px_rgba(20,83,45,0.5)] transition-shadow duration-300"
-              >
-                Get Your Free Quote
-              </a>
+              <div className="box-border caret-transparent flex flex-wrap items-center gap-4">
+                <a
+                  href="#contact"
+                  onClick={() => trackQuoteButton('features')}
+                  className="text-white text-sm bg-green-800 box-border caret-transparent inline-block leading-[19.6px] text-center border border-green-800 px-5 py-2 rounded-[50px] border-solid md:text-lg md:leading-[25.2px] md:px-[30px] md:py-3 hover:bg-green-900 hover:decoration-transparent shadow-[0_0_20px_rgba(22,101,52,0.5),0_0_40px_rgba(22,101,52,0.3)] hover:shadow-[0_0_30px_rgba(20,83,45,0.7),0_0_60px_rgba(20,83,45,0.5)] transition-shadow duration-300"
+                >
+                  Get Your Free Quote
+                </a>
+                {!location && (
+                  <a href="/locations" className="text-green-800 text-sm md:text-base font-semibold hover:underline">
+                    View all areas we serve &rarr;
+                  </a>
+                )}
+              </div>
             </div>
           </div>
         </div>

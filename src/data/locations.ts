@@ -801,3 +801,24 @@ export function getLocationBySlug(slug: string): Location | undefined {
 export function getLocationsByRegion(region: "central-belt" | "ayrshire"): Location[] {
   return region === "central-belt" ? centralBeltLocations : ayrshireLocations;
 }
+
+/** Nearest other locations by straight-line distance, for "nearby areas" cross-linking */
+export function getNearbyLocations(slug: string, count = 5): Location[] {
+  const current = getLocationBySlug(slug);
+  if (!current?.geo) return [];
+
+  const lat1 = parseFloat(current.geo.latitude);
+  const lng1 = parseFloat(current.geo.longitude);
+
+  return getAllLocations()
+    .filter((loc) => loc.slug !== slug && loc.geo)
+    .map((loc) => {
+      const lat2 = parseFloat(loc.geo!.latitude);
+      const lng2 = parseFloat(loc.geo!.longitude);
+      const distance = Math.sqrt((lat1 - lat2) ** 2 + (lng1 - lng2) ** 2);
+      return { loc, distance };
+    })
+    .sort((a, b) => a.distance - b.distance)
+    .slice(0, count)
+    .map(({ loc }) => loc);
+}

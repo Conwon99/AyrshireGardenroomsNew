@@ -2,24 +2,32 @@
 import BaseLayout from "@/layouts/BaseLayout.astro";
 import { Header } from "@/sections/Header";
 import { Footer } from "@/sections/Footer";
+import Breadcrumbs from "@/components/Breadcrumbs.astro";
 import { GardenRoomsHero } from "@/pages/garden-rooms/sections/Hero";
 import { GardenRoomsFeatures } from "@/pages/garden-rooms/sections/Features";
 import { GardenRoomsGallery } from "@/pages/garden-rooms/sections/Gallery";
 import { GardenRoomsTestimonials } from "@/pages/garden-rooms/sections/Testimonials";
 import { GardenRoomsFAQ } from "@/pages/garden-rooms/sections/FAQ";
 import { GardenRoomsContactForm } from "@/pages/garden-rooms/sections/ContactForm";
+
+const breadcrumbs = [
+  { name: "Home", url: "/" },
+  { name: "Garden Rooms", url: "/garden-rooms" },
+];
 ---
 
-<BaseLayout 
-  title="Garden Rooms Ayrshire | Custom Garden Room Installation | Ayrshire Garden Rooms"
-  description="Transform your garden with a beautiful custom garden room. Professional installation across Ayrshire - Irvine, Kilmarnock, Ayr, Troon and more. Free quotes, fully insured, custom design."
+<BaseLayout
+  title="Custom Garden Rooms Ayrshire | Ayrshire Garden Rooms"
+  description="Transform your garden with a beautiful custom garden room. Professional installation across Ayrshire - Irvine, Kilmarnock, Ayr, Troon and more."
   canonical="https://ayrshiregardenrooms.co.uk/garden-rooms"
   keywords="garden rooms ayrshire, garden room installation ayrshire, garden rooms irvine, garden rooms kilmarnock, garden rooms ayr, custom garden rooms ayrshire, garden office ayrshire, garden room builders ayrshire"
   gaId="G-T9RTPLDCJ7"
+  breadcrumbs={breadcrumbs}
 >
     <div class="text-neutral-600 text-lg not-italic normal-nums font-medium accent-auto bg-[#323232] box-border caret-transparent block tracking-[normal] leading-[27px] list-outside list-disc min-h-full pointer-events-auto text-start indent-[0px] normal-case visible border-separate font-manrope">
       <Header client:load />
       <div class="pt-[80px] md:pt-[100px]">
+        <Breadcrumbs items={breadcrumbs} />
         <GardenRoomsHero client:load />
       </div>
       <GardenRoomsFeatures client:load />
